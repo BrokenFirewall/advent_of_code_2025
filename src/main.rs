@@ -5,6 +5,8 @@ mod days {
     pub mod day2_2;
     pub mod day3_1;
     pub mod day3_2;
+    pub mod day4_1;
+    pub mod day4_2;
 }
 
 use std::env;
@@ -24,6 +26,8 @@ fn main() {
         "22" => days::day2_2::run(),
         "31" => days::day3_1::run(),
         "32" => days::day3_2::run(),
+        "41" => days::day4_1::run(),
+        "42" => days::day4_2::run(),
         _ => eprintln!("Day not implemented"),
     }
 }
