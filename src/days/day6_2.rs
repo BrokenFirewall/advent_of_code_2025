@@ -1,5 +1,5 @@
 pub fn run() {
-    let input = include_str!("../../data/day_6_test.txt");
+    let input = include_str!("../../data/day_6.txt");
 
     let lines: Vec<String> = input
         .lines()
@@ -16,7 +16,7 @@ pub fn run() {
     let data_lines = &lines[..lines.len() - 1];
     let width = lines.iter().map(|l| l.len()).max().unwrap();
 
-    let mut grid: Vec<Vec<char>> = data_lines
+    let grid: Vec<Vec<char>> = data_lines
         .iter()
         .map(|line| {
             let mut chars: Vec<char> = line.chars().collect();
